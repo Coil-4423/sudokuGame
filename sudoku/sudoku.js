@@ -12,7 +12,6 @@ const hard = [
 ];
 
 
-
 var timer;
 let timeRemaining;
 var lives;
@@ -49,8 +48,6 @@ window.onload = function () {
             }
         })
     }
-
-    
 }
 
 function startGame(){
