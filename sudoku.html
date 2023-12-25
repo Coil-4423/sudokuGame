@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sudoku</title>
+        <link rel="stylesheet" href="sudoku.css">
+        <script src="sudoku.js"></script>
+    </head>
+    <header>
+        <h1>Sudoku</h1>
+        <div id="setup-game">
+            <div id="difficulty">
+                <h3>Choose difficulty</h3>
+                <label><input type="radio" id="diff-1" name="diff" value="easy" checked>easy</label>
+                <label><input type="radio" id="diff-2" name="diff" value="midium">midium</label>
+                <label><input type="radio" id="diff-3" name="diff" value="hard">hard</label>
+            </div>
+            <div id="time">
+                <h3>Choose time</h3>
+                <label><input type="radio" id="time-1" name="time" value="3min" checked>3 min</label>
+                <label><input type="radio" id="time-2" name="time" value="5min">5 min</label>
+                <label><input type="radio" id="time-3" name="time" value="10min">10 min</label>
+            </div>  
+            <div id="theme">
+                <h3>theme</h3>
+                <label><input type="radio" id="theme-1" name="theme" value="3min" checked>light</label>
+                <label><input type="radio" id="theme-2" name="theme" value="5min">dark</label>
+            </div>  
+        </div>
+        <button id="start-btn">Create new game</button>
+    </header>
+    <body>
+        <p id="lives">lives: <strong id="remainingLives"></strong></p>
+        <p id="timer">Remaining time: <strong id="remainingTime"></strong></p>
+        <p id="won"></p>
+        <p id="lost"></p>
+        <div id="game">
+            <div id="board"></div>      
+            <div id="number-container">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+    </body>
+</html>
